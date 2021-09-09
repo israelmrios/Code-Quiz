@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,35 @@
     <title>Israel's Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Patua+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
-        <a>Israel's Code Quiz</a>
+        <a class="header-title">Israel's Code Quiz</a>
         <div>
-            <div>
-                <a>High Score: <span id="highScoreHeader" class="high-score">0 </span></a>
-                <a>Time:<span class="timer-count">100</span></a>
+            <div class="nav-container">
+                <a>High Score: <span id="highScoreHeader" class="high-score">0</span></a>
+                <a>Time: <span id="timerCount">100</span></a>
             </div>
         </div>
     </nav>
 
     <main class="container">
-        <div class="rules-container" id='rules-container'>
-            <h1 class=card-header>Israel's Code Quiz</h1>
+        <div id="rulesContainer" class="rules-container">
+            <h1 class="card-header">Israel's Code Quiz</h1>
             <p class="rules">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio expedita consequuntur odio nostrum
                 alias id eius distinctio, quaerat ullam mollitia error aliquam sunt delectus molestias autem rerum dignissimos
                 quidem.
             </p>
-            <button id='start-button' class="btn">Start Quiz</button>
+            <button id="startButton" class="btn">Start Quiz</button>
         </div>
 
-        <div id="question-div" class="hidden">
-            <h2 id="questions-title" class="question-container"></h2>
+        <div id="questionDiv" class="hidden question-div">
+            <h2 id="questionsTitle" class="question-container"></h2>
             <div id="choice"></div>
         </div>
 

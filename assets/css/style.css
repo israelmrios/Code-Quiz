@@ -10,30 +10,53 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+nav {
+    padding: 30px 0px 20px 0px;
+}
+
+.header-title {
+    font-family: 'Patua One', cursive;
+    font-size: 50px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
 }
 
 .container {
     background-color: white;
     padding: 3rem;
     border-radius: 1rem;
-    border-radius: 2px solid black;
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* padding: 1rem; */
+    box-sizing: border-box;
+    height: 351px;
+    width: 834px;
+}
+
+.rules {
+    word-wrap: normal;
 }
 
 .rules-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap: 60px;
 }
 
 .card-header {
-    padding-bottom: 1rem;
+    font-size: 20px;
 }
 
 .card-header::after {
@@ -44,12 +67,12 @@ body {
     height: 2px;
 }
 
-.rules {
-    padding-bottom: 1rem;
-}
-
 .question-div {
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .question-container {
