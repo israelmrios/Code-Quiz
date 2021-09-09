@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israel's Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+    <nav>
+        <a>Israel's Code Quiz</a>
+        <div>
+            <div>
+                <a>High Score: <span id="highScoreHeader" class="high-score">0 </span></a>
+                <a>Time:<span class="timer-count">100</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="rules-container" id='rules-container'>
+            <h1 class=card-header>Israel's Code Quiz</h1>
+            <p class="rules">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio expedita consequuntur odio nostrum
+                alias id eius distinctio, quaerat ullam mollitia error aliquam sunt delectus molestias autem rerum dignissimos
+                quidem.
+            </p>
+            <button id='start-button' class="btn">Start Quiz</button>
+        </div>
+
+        <div id="question-div" class="hidden">
+            <h2 id="questions-title" class="question-container"></h2>
+            <div id="choice"></div>
+        </div>
+
+        <div id="gameOver" class="hidden">
+            <h2></h2>
+            <p>your score: <span id='score'></span></p>
+            <p>Your Initials: <input type="text" maxlenght="4" id="initialsText" />
+            <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="scoreList" class="hidden">
+            <h2>New Highscore!!!</h2>
+            <ol id="highScores"></ol>
+            <p><button id="returnBut">Return</button></p>
+        </div>
+        
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
