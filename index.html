@@ -19,8 +19,8 @@
         <a class="header-title">Israel's Code Quiz</a>
         <div>
             <div class="nav-container">
-                <a>High Score: <span id="highScoreHeader" class="high-score">0</span></a>
-                <a>Time: <span id="timerCount">100</span></a>
+                <a class="high-score">High Score: <span id="highScoreHeader" class="high-score-num">0</span></a>
+                <a>Time: <span id="timerCount" class="timer-count">100</span></a>
             </div>
         </div>
     </nav>
@@ -36,21 +36,23 @@
         <div id="questionDiv" class="hidden question-div">
             <h2 id="questionsTitle" class="question-container"></h2>
             <div id="choice" class="choice-btns"></div>
-            <h3 id="answerResult"></h3>
+            <h3 id="answerResult" class="answer-result"></h3>
         </div>
 
-        <div id="gameOver" class="hidden">
-            <h2></h2>
-            <p>Your score: <span id='score'></span></p>
+        <div id="gameOver" class="hidden game-over">
+            <h2 class="congrats">Congratulations!</h2>
+            <p class="your-score">Your score: <span id='score' class="score"></span></p>
             <p>Your Initials: <input type="text" id="initialsText" maxlength="3" style='text-transform:uppercase'>
             <button id="submit">Submit</button>
             </p>
         </div>
 
         <div id="scoreList" class="hidden">
-            <h2>New Highscore!!!</h2>
-            <ol id="highScores" style='text-transform:uppercase'></ol>
-            <p><button id="returnBut">Return</button></p>
+            <div class="score-list">
+                <h2 class="congrats">Highscores!!!</h2>
+                <ol id="highScores" style='text-transform:uppercase'></ol>
+                <p><button id="returnBut" class="btn">Return</button></p>
+            </div>
         </div>
         
     </main>

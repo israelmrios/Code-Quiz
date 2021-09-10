@@ -85,6 +85,7 @@ function startQuiz() {
     startContainer.setAttribute('class', 'hidden')
     //show the question screen
     questionContainer.removeAttribute('class')
+    questionContainer.setAttribute('class', 'question-div')
     //we need to start the time
     timer = setInterval(function (){
         //suctract 1 second from the time
@@ -170,6 +171,7 @@ function end() {
     clearInterval(timer);
     //show the end container
     gameOverContainer.removeAttribute('class')
+    gameOverContainer.setAttribute('class', 'game-over')
     //hide the question container
     questionContainer.setAttribute('class', 'hidden')
     //show the final score
