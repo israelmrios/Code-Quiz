@@ -27,30 +27,29 @@
 
     <main class="container">
         <div id="rulesContainer" class="rules-container">
-            <h1 class="card-header">Israel's Code Quiz</h1>
-            <p class="rules">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio expedita consequuntur odio nostrum
-                alias id eius distinctio, quaerat ullam mollitia error aliquam sunt delectus molestias autem rerum dignissimos
-                quidem.
+            <h1 class="card-header">Are you up for the challenge?</h1>
+            <p class="rules">Click the Start Quiz button to begin the game. You will be presented with a series of coding questions, get a question wrong and 10 seconds will get deducted from the clock. Your remaining time at the end of the game will be your final score. Best of luck and may the odds be ever in your favor!
             </p>
             <button id="startButton" class="btn">Start Quiz</button>
         </div>
 
         <div id="questionDiv" class="hidden question-div">
             <h2 id="questionsTitle" class="question-container"></h2>
-            <div id="choice"></div>
+            <div id="choice" class="choice-btns"></div>
+            <h3 id="answerResult"></h3>
         </div>
 
         <div id="gameOver" class="hidden">
             <h2></h2>
-            <p>your score: <span id='score'></span></p>
-            <p>Your Initials: <input type="text" maxlenght="4" id="initialsText" />
+            <p>Your score: <span id='score'></span></p>
+            <p>Your Initials: <input type="text" id="initialsText" maxlength="3" style='text-transform:uppercase'>
             <button id="submit">Submit</button>
             </p>
         </div>
 
         <div id="scoreList" class="hidden">
             <h2>New Highscore!!!</h2>
-            <ol id="highScores"></ol>
+            <ol id="highScores" style='text-transform:uppercase'></ol>
             <p><button id="returnBut">Return</button></p>
         </div>
         
